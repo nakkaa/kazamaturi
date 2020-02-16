@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <link rel="amphtml" href="https://7ka.org/hugo-config-item/?amp=1">
+  <title>HugoのConfigでわからない項目があったのでまとめた – としつーる</title>
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="最近このブログをHugoへ移行するために、Hugoでサイトを立てて弄り回しているのですが、Configでよくわからない項目があったので調べてみました。(本当は公式ドキュメントから探すのが筋なのですが、一部先人のブログを参考にしています。)c">
+  <meta property="og:title" content="HugoのConfigでわからない項目があったのでまとめた">
+  <meta property="og:url" content="https://7ka.org/hugo-config-item/">
+  <meta property="og:image" content="https://7ka.org/wp-content/uploads/2018/09/profile.jpg">
+  <meta property="og:site_name" content="としつーる">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="article:published_time" content="2020-02-16T19:30:49+09:00" />
+  <meta property="article:modified_time" content="2020-02-16T19:30:49+09:00" />
+  <meta property="article:section" content="コンピュータ">
+  <meta property="article:tag" content="Hugo">
+  <meta name="twitter:card" content="summary">
+  <meta property="twitter:description" content="最近このブログをHugoへ移行するために、Hugoでサイトを立てて弄り回しているのですが、Configでよくわからない項目があったので調べてみました。(本当は公式ドキュメントから探すのが筋なのですが、一部先人のブログを参考にしています。)c">
+  <meta property="twitter:title" content="HugoのConfigでわからない項目があったのでまとめた">
+  <meta property="twitter:url" content="https://7ka.org/hugo-config-item/">
+  <meta name="twitter:image" content="https://7ka.org/wp-content/uploads/2018/09/profile.jpg">
+  <meta name="twitter:domain" content="7ka.org">
+  <meta name="twitter:creator" content="@_nakkaa">
+  <meta name="twitter:site" content="@_nakkaa">
+  <link rel='dns-prefetch' href='//ajax.googleapis.com' />
+  <link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+  <link rel='dns-prefetch' href='//secure.gravatar.com' />
+  <link rel='dns-prefetch' href='//s.w.org' />
+  <link rel="alternate" type="application/rss+xml" title="としつーる &raquo; フィード" href="https://7ka.org/feed/" />
+  <link rel="alternate" type="application/rss+xml" title="としつーる &raquo; コメントフィード" href="https://7ka.org/comments/feed/" />
+  <link rel="alternate" type="application/rss+xml" title="としつーる &raquo; HugoのConfigでわからない項目があったのでまとめた のコメントのフィード" href="https://7ka.org/hugo-config-item/feed/" />
+  <link rel='stylesheet' id='wp-block-library-css' href='https://c0.wp.com/c/5.3.2/wp-includes/css/dist/block-library/style.min.css' media='all' />
+  <link rel='stylesheet' id='jetpack_css-css' href='https://c0.wp.com/p/jetpack/8.2/css/jetpack.css' media='all' />
+  <link rel="icon" href="https://7ka.org/wp-content/themes/cocoon-master/images/site-icon32x32.png" sizes="32x32" />
+  <link rel="icon" href="https://7ka.org/wp-content/themes/cocoon-master/images/site-icon192x192.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="https://7ka.org/wp-content/themes/cocoon-master/images/site-icon180x180.png" />
+  <meta name="msapplication-TileImage" content="https://7ka.org/wp-content/themes/cocoon-master/images/site-icon270x270.png" />
+  <link rel="canonical" href="https://7ka.org/hugo-config-item/">
+  <meta name="description" content="最近このブログをHugoへ移行するために、Hugoでサイトを立てて弄り回しているのですが、Configでよくわからない項目があったので調べてみました。(本当は公式ドキュメントから探すのが筋なのですが、一部先人のブログを参考にしています。)c">
+  <meta name="keywords" content="コンピュータ">
+  <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://7ka.org/hugo-config-item/"
+        },
+        "headline": "HugoのConfigでわからない項目があったのでまとめた",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://7ka.org/wp-content/uploads/2018/09/profile.jpg",
+            "width": 1749,
+            "height": 1604
+        },
+        "datePublished": "2020-02-16T19:30:49+09:00",
+        "dateModified": "2020-02-16T19:30:49+09:00",
+        "author": {
+            "@type": "Person",
+            "name": "なっかあ"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "としつーる",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://7ka.org/wp-content/themes/cocoon-master/images/no-amp-logo.png",
+                "width": 206,
+                "height": 60
+            }
+        },
+        "description": "最近このブログをHugoへ移行するために、Hugoでサイトを立てて弄り回しているのですが、Configでよくわからない項目があったので調べてみました。(本当は公式ドキュメントから探すのが筋なのですが、一部先人のブログを参考にしています。)c…"
+    }
+  </script>
+
+</head>
+<body class="post-template-default single single-post postid-6153 single-format-standard body public-page page-body categoryid-2 tagid-81 ff-yu-gothic fz-18px fw-400 hlt-center-logo-wrap ect-entry-card-wrap rect-entry-card-wrap no-scrollable-sidebar no-scrollable-main sidebar-right mblt-none scrollable-mobile-buttons author-admin no-sp-snippet font-awesome-4" itemscope itemtype="https://schema.org/WebPage">
+  <div id="container" class="container cf">
+    <div id="header-container" class="header-container">
+      <div class="header-container-in hlt-center-logo">
+        <header id="header" class="header cf" itemscope itemtype="https://schema.org/WPHeader">
+          <div id="header-in" class="header-in wrap cf" itemscope itemtype="https://schema.org/WebSite">
+            <div class="tagline" itemprop="alternativeHeadline">ひよっこプログラマのメモ書き</div>
+            <div class="logo logo-header logo-text"><a href="https://7ka.org/" class="site-name site-name-text-link" itemprop="url"><span class="site-name-text" itemprop="name about">としつーる</span></a></div>
+          </div>
+        </header>
+        <nav id="navi" class="navi cf" itemscope itemtype="https://schema.org/SiteNavigationElement">
+          <div id="navi-in" class="navi-in wrap cf">
+            <ul id="menu-footernav" class="menu-top menu-header menu-pc">
+              <li id="menu-item-5131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-no-description">
+                <a href="https://7ka.org/software/">
+                  <div class="caption-wrap">
+                    <div class="item-label"><i class="fa fa-cog" aria-hidden="true"></i> Software</div>
+                  </div>
+                </a>
+              </li>
+              <li id="menu-item-5130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-has-no-description">
+                <a href="https://7ka.org/about/">
+                  <div class="caption-wrap">
+                    <div class="item-label"><i class="fa fa-user" aria-hidden="true"></i> About</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <ul id="menu-footernav-1" class="menu-top menu-mobile">
+              <li id="menu-item-5131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-no-description">
+                <a href="https://7ka.org/software/">
+                  <div class="caption-wrap">
+                    <div class="item-label"><i class="fa fa-cog" aria-hidden="true"></i> Software</div>
+                  </div>
+                </a>
+              </li>
+              <li id="menu-item-5130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-has-no-description">
+                <a href="https://7ka.org/about/">
+                  <div class="caption-wrap">
+                    <div class="item-label"><i class="fa fa-user" aria-hidden="true"></i> About</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div id="content" class="content cf">
+      <div id="content-in" class="content-in wrap">
+        <main id="main" class="main" itemscope itemtype="https://schema.org/Blog">
+          <article id="post-6153" class="article post-6153 post type-post status-publish format-standard hentry category-computer-post tag-hugo-post" itemscope="itemscope" itemprop="blogPost" itemtype="https://schema.org/BlogPosting">
+            <header class="article-header entry-header">
+              <h1 class="entry-title" itemprop="headline"> HugoのConfigでわからない項目があったのでまとめた</h1>
+              <div class="eye-catch-wrap display-none">
+                <figure class="eye-catch" itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><img class="lozad lozad-img" loading="lazy" data-src="https://7ka.org/wp-content/uploads/2018/09/profile.jpg" width="1749" height="1604" alt=""><noscript><img src="https://7ka.org/wp-content/uploads/2018/09/profile.jpg" width="1749" height="1604" alt=""></noscript>
+                  <meta itemprop="url" content="https://7ka.org/wp-content/uploads/2018/09/profile.jpg">
+                  <meta itemprop="width" content="1749">
+                  <meta itemprop="height" content="1604">
+                </figure>
+              </div>
+              <div class="sns-share ss-col-6 ss-high-and-low-lc bc-brand-color sbc-show ss-top">
+                <div class="sns-share-buttons sns-buttons"><a href="https://twitter.com/intent/tweet?text=Hugo%E3%81%AEConfig%E3%81%A7%E3%82%8F%E3%81%8B%E3%82%89%E3%81%AA%E3%81%84%E9%A0%85%E7%9B%AE%E3%81%8C%E3%81%82%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7%E3%81%BE%E3%81%A8%E3%82%81%E3%81%9F+%23%E3%81%A8%E3%81%97%E3%81%A4%E3%83%BC%E3%82%8B&amp;url=https%3A%2F%2F7ka.org%2Fhugo-config-item%2F" class="share-button twitter-button twitter-share-button-sq" target="_blank" rel="nofollow noopener noreferrer"><span class="social-icon icon-twitter"></span><span class="button-caption">Twitter</span><span class="share-count twitter-share-count"></span></a><a href="//b.hatena.ne.jp/entry/s/7ka.org/hugo-config-item/" class="share-button hatebu-button hatena-bookmark-button hatebu-share-button-sq" data-hatena-bookmark-layout="simple" title="HugoのConfigでわからない項目があったのでまとめた" target="_blank" rel="nofollow noopener noreferrer"><span class="social-icon icon-hatena"></span><span class="button-caption">はてブ</span><span class="share-count hatebu-share-count">0</span></a><a href="//getpocket.com/edit?url=https://7ka.org/hugo-config-item/" class="share-button pocket-button pocket-share-button-sq" target="_blank" rel="nofollow noopener noreferrer"><span class="social-icon icon-pocket"></span><span class="button-caption">Pocket</span><span class="share-count pocket-share-count">0</span></a></div>
+              </div>
+              <div class="date-tags"><span class="post-date"><span class="fa fa-clock-o" aria-hidden="true"></span> <time class="entry-date date published updated" datetime="2020-02-16T19:30:49+09:00" itemprop="datePublished dateModified">2020.02.16</time></span>
+              </div>
+            </header>
+            <div class="entry-content cf" itemprop="mainEntityOfPage">
+              <p>最近このブログをHugoへ移行するために、Hugoでサイトを立てて弄り回しているのですが、Configでよくわからない項目があったので調べてみました。(本当は公式ドキュメントから探すのが筋なのですが、一部先人のブログを参考にしています。)</p>
+
+              <h2><span id="toc1">copyright</span></h2>
+              <p>サイトのCopyright表記を指定する。</p>
+              <h2><span id="toc2">disqusShortname</span></h2>
+              <p>disqusのアカウント名を指定すると、コメント欄(disqus)が使えるようになる。</p>
+              <p><a href="https://gohugo.io/content-management/comments/">Comments | Hugo</a></p>
+            </div>
+            <footer class="article-footer entry-footer">
+              <div class="entry-categories-tags ctdt-one-row">
+                <div class="entry-categories"><a class="cat-link cat-link-2" href="https://7ka.org/category/computer/"><span class="fa fa-folder" aria-hidden="true"></span> コンピュータ</a></div>
+                <div class="entry-tags"><a class="tag-link tag-link-81 border-element" href="https://7ka.org/tag/hugo/"><span class="fa fa-tag" aria-hidden="true"></span> Hugo</a></div>
+              </div>
+              <div class="sns-share ss-col-3 bc-brand-color sbc-hide ss-bottom">
+                <div class="sns-share-message">シェアする</div>
+                <div class="sns-share-buttons sns-buttons"><a href="https://twitter.com/intent/tweet?text=Hugo%E3%81%AEConfig%E3%81%A7%E3%82%8F%E3%81%8B%E3%82%89%E3%81%AA%E3%81%84%E9%A0%85%E7%9B%AE%E3%81%8C%E3%81%82%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7%E3%81%BE%E3%81%A8%E3%82%81%E3%81%9F+%23%E3%81%A8%E3%81%97%E3%81%A4%E3%83%BC%E3%82%8B&amp;url=https%3A%2F%2F7ka.org%2Fhugo-config-item%2F" class="share-button twitter-button twitter-share-button-sq" target="_blank" rel="nofollow noopener noreferrer"><span class="social-icon icon-twitter"></span><span class="button-caption">Twitter</span><span class="share-count twitter-share-count"></span></a><a href="//b.hatena.ne.jp/entry/s/7ka.org/hugo-config-item/" class="share-button hatebu-button hatena-bookmark-button hatebu-share-button-sq" data-hatena-bookmark-layout="simple" title="HugoのConfigでわからない項目があったのでまとめた" target="_blank" rel="nofollow noopener noreferrer"><span class="social-icon icon-hatena"></span><span class="button-caption">はてブ</span><span class="share-count hatebu-share-count">0</span></a><a href="//getpocket.com/edit?url=https://7ka.org/hugo-config-item/" class="share-button pocket-button pocket-share-button-sq" target="_blank" rel="nofollow noopener noreferrer"><span class="social-icon icon-pocket"></span><span class="button-caption">Pocket</span><span class="share-count pocket-share-count">0</span></a></div>
+              </div>
+              <div class="footer-meta">
+                <div class="author-info"><span class="fa fa-pencil" aria-hidden="true"></span> <a href="https://7ka.org/author/nakkaa/" class="author-link"><span class="post-author vcard author" itemprop="editor author creator copyrightHolder" itemscope itemtype="https://schema.org/Person"><span class="author-name fn" itemprop="name">なっかあ</span></span></a></div>
+              </div>
+              <div class="publisher" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><img src="" width="600" height="60" alt="">
+                  <meta itemprop="url" content="">
+                  <meta itemprop="width" content="600">
+                  <meta itemprop="height" content="60">
+                </div>
+                <div itemprop="name">としつーる</div>
+              </div>
+            </footer>
+          </article>
+
+          <div id="breadcrumb" class="breadcrumb breadcrumb-category sbp-main-bottom" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <div class="breadcrumb-home" itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span class="fa fa-home fa-fw" aria-hidden="true"></span><a href="https://7ka.org" itemprop="item"><span itemprop="name">ホーム</span></a>
+              <meta itemprop="position" content="1" /> <span class="sp"><span class="fa fa-angle-right" aria-hidden="true"></span></span>
+            </div>
+            <div class="breadcrumb-item" itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span class="fa fa-folder fa-fw" aria-hidden="true"></span><a href="https://7ka.org/category/computer/" itemprop="item"><span itemprop="name">コンピュータ</span></a>
+              <meta itemprop="position" content="2" /> </div>
+          </div>
+        </main>
+        <div id="sidebar" class="sidebar nwa cf" role="complementary">
+          <aside id="author_box-2" class="widget widget-sidebar widget-sidebar-standard widget_author_box">
+            <div class="author-box border-element no-icon cf">
+              <figure class="author-thumb"><img alt='' data-src="https://secure.gravatar.com/avatar/190997bb452842c8db0251e13d1dc414?s=200&#038;d=mm&#038;r=g" data-srcset='https://secure.gravatar.com/avatar/190997bb452842c8db0251e13d1dc414?s=400&#038;d=mm&#038;r=g 2x' class="avatar avatar-200 photo lozad lozad-img" loading="lazy" height='200' width='200' /> <noscript><img alt='' src='https://secure.gravatar.com/avatar/190997bb452842c8db0251e13d1dc414?s=200&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/190997bb452842c8db0251e13d1dc414?s=400&#038;d=mm&#038;r=g 2x' class='avatar avatar-200 photo' height='200' width='200'/>
+</noscript></figure>
+              <div class="author-content">
+                <div class="author-name"><a rel="author" href="https://7ka.org/author/nakkaa/" title="なっかあ の投稿">なっかあ</a></div>
+                <div class="author-description">
+                  <p>見習いプログラマです。</p>
+                </div>
+                <div class="author-follows">
+                  <div class="sns-follow bc-brand-color fbc-hide sf-profile">
+                    <div class="sns-follow-message">なっかあをフォローする</div>
+                    <div class="sns-follow-buttons sns-buttons"><a href="https://7ka.org" class="follow-button website-button website-follow-button-sq" target="_blank" title="著者サイト" rel="nofollow noopener noreferrer"><span class="icon-home-logo"></span></a><a href="https://twitter.com/_nakkaa" class="follow-button twitter-button twitter-follow-button-sq" target="_blank" title="Twitterをフォロー" rel="nofollow noopener noreferrer"><span class="icon-twitter-logo"></span></a><a href="//feedly.com/i/discover/sources/search/feed/https%3A%2F%2F7ka.org" class="follow-button feedly-button feedly-follow-button-sq" target="_blank" title="feedlyで更新情報を購読" rel="nofollow noopener noreferrer"><span class="icon-feedly-logo"></span><span class="follow-count feedly-follow-count"></span></a><a href="https://7ka.org/feed/" class="follow-button rss-button rss-follow-button-sq" target="_blank" title="RSSで更新情報をフォロー" rel="nofollow noopener noreferrer"><span class="icon-rss-logo"></span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <aside id="custom_html-2" class="widget_text widget widget-sidebar widget-sidebar-standard widget_custom_html">
+            <h3 class="widget-sidebar-title widget-title">リンク</h3>
+            <div class="textwidget custom-html-widget">
+              <ul>
+                <li><a href="https://blog.babibubebo.org">ばびぶべぼブログ</a></li>
+                <li><a href="http://frank-life.seesaa.net">ふらんくらいふ</a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+    <footer id="footer" class="footer footer-container nwa" itemscope itemtype="https://schema.org/WPFooter">
+      <div id="footer-in" class="footer-in wrap cf">
+        <div class="footer-bottom fdt-logo fnm-text-width cf">
+          <div class="footer-bottom-logo">
+            <div class="logo logo-footer logo-text"><a href="https://7ka.org/" class="site-name site-name-text-link" itemprop="url"><span class="site-name-text" itemprop="name about">としつーる</span></a></div>
+          </div>
+          <div class="footer-bottom-content">
+            <nav id="navi-footer" class="navi-footer">
+              <div id="navi-footer-in" class="navi-footer-in"></div>
+            </nav>
+            <div class="source-org copyright">© 2013 としつーる.</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div id="go-to-top" class="go-to-top"><a class="go-to-top-button go-to-top-common go-to-top-hide go-to-top-button-icon-font"><span class="fa fa-angle-double-up"></span></a></div>
+  <div style="display:none">
+    <div class="grofile-hash-map-190997bb452842c8db0251e13d1dc414"></div>
+  </div>
+</body>
+</html>
